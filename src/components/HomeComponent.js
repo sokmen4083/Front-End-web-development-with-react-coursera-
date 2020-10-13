@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
+import { Loading } from './LoadingComponent';
 
 function RenderCard({item, isLoading, errMess}) {
    if (isLoading) {
@@ -13,7 +14,7 @@ function RenderCard({item, isLoading, errMess}) {
       );
   }
   else 
-      rreturn(
+      return(
          <Card>
              <CardImg src={item.image} alt={item.name} />
              <CardBody>
